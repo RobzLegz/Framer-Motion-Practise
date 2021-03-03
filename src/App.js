@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import './App.css';
 import Example from './Example';
+import { Swiper } from './Swiper';
 import Testing from './Testing';
 
 function App() {
@@ -9,14 +10,18 @@ function App() {
 
   return (
     <>
-      <div className="app">
+      <Swiper />
+      {/* <div className="app"> */}
         {/* <div className="example__container">
           <Example count={count} setCount={setCount} key={count} />
         </div> */}
-        <div className="example__container">
+        {/* <div className="example__container">
           <Testing />
         </div>
-      </div>
+        <div className="example__container">
+          <Swiper />
+        </div>
+      </div> */}
     </>
   );
 }
