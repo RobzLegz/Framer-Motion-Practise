@@ -26,6 +26,12 @@ export const Swiper = () => {
         style={{ x }}
         drag="x"
         dragConstraints={{ left: 0, right: 0 }}
+        transition={{duration: 3}}
+        whileTap={{
+            scale: [1, 1.2, 1.2, 1, 1],
+            rotate: [0, 0, 270, 270, 0],
+            borderRadius: ["20%", "20%", "50%", "50%", "20%"]
+        }}
       >
         <svg className="progress-icon" viewBox="0 0 50 50">
           <motion.path
